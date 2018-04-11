@@ -32,8 +32,12 @@ view model =
   [ button [onClick Dec][text "-"]
   , div [] [ text (toString model) ]
   , button [onClick Inc][text "+"]
-
-
-
-
   ]
+
+myStyle =
+  [ ("width", "100%")
+    , ("height", "40px")
+    , ("padding", "10px 0")
+    , ("font-size", "2em")
+    , ("text-align", "center")
+    ]
