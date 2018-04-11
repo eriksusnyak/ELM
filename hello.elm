@@ -1,10 +1,9 @@
 import Html exposing (..)
 import Html.Events exposing (..)
-import Html.App as App
 
 
 main =
-  App.beginnerProgram {view = view, model = model, update = update}
+  beginnerProgram { model = model , view = view , update = update }
 
 --model
 type alias Model =
@@ -31,7 +30,7 @@ view : Model -> Html Msg
 view model =
   div []
   [ button [onClick Dec][text "-"]
-  , div [text (toString model)]
+  , div [] [ text (toString model) ]
   , button [onClick Inc][text "+"]
 
 
